@@ -8,6 +8,8 @@
 
 import UIKit
 import CoreData
+import AccountKit
+
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {

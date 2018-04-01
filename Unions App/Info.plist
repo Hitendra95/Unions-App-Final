@@ -38,7 +38,7 @@
 	<string>203140126942270</string>
 	<key>FacebookDisplayName</key>
 	<string>Unions App</string>
-	<key>AccountKitClientTooken</key>
+	<key>AccountKitClientToken</key>
 	<string>77d3134b0862fb5b157db1a74d20298e</string>
 	<key>CFBundleURLTypes</key>
 	<array>
