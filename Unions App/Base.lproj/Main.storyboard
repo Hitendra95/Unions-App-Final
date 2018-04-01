@@ -74,6 +74,7 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
+                        <outlet property="loginwithPhoneButton" destination="tfX-H1-PFA" id="UdP-xR-cHA"/>
                         <segue destination="a8n-hX-IdP" kind="show" identifier="showhome" id="esp-yl-G8g"/>
                     </connections>
                 </viewController>

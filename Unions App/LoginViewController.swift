@@ -10,13 +10,17 @@ import UIKit
 import AccountKit
 
 class LoginViewController: UIViewController ,AKFViewControllerDelegate{
-
+    //Continue with phone Number button
+    @IBOutlet weak var loginwithPhoneButton: UIButton!
+    
     var accountKit:AKFAccountKit!
     override func viewDidLoad() {
         super.viewDidLoad()
         if accountKit == nil
         {
             self.accountKit = AKFAccountKit(responseType: AKFResponseType.accessToken)
+            loginwithPhoneButton.layer.cornerRadius = 20
+            loginwithPhoneButton.clipsToBounds = true
         }
         // Do any additional setup after loading the view.
     }
