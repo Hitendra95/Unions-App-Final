@@ -24,10 +24,13 @@
                                     <constraint firstAttribute="height" constant="128" id="Tmn-n8-M5B"/>
                                 </constraints>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Together We Rise" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yfK-K5-tal">
-                                <rect key="frame" x="100" y="433" width="174" height="26.5"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
-                                <color key="textColor" red="0.57414853570000002" green="0.57416242360000003" blue="0.57415497299999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Unions App" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="63a-Lx-N3h">
+                                <rect key="frame" x="119" y="393" width="136" height="31"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="31" id="UsE-8a-1GF"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="25"/>
+                                <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tfX-H1-PFA">
@@ -40,29 +43,29 @@
                                     <color key="titleColor" red="0.97631285820000002" green="1" blue="0.97414573149999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Unions App" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="63a-Lx-N3h">
-                                <rect key="frame" x="112" y="405" width="151" height="31"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Together We Rise" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yfK-K5-tal">
+                                <rect key="frame" x="100" y="421" width="174" height="26.5"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="31" id="5Z0-ML-Eug"/>
+                                    <constraint firstAttribute="height" constant="26.5" id="dWd-gP-hJB"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="25"/>
-                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                <color key="textColor" red="0.57414853570000002" green="0.57416242360000003" blue="0.57415497299999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="tfX-H1-PFA" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="15" id="8JJ-7O-473"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="yfK-K5-tal" secondAttribute="trailing" constant="101" id="8i1-zq-Nkb"/>
                             <constraint firstItem="smW-87-mDW" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="96" id="B5U-A3-Dnz"/>
-                            <constraint firstItem="yfK-K5-tal" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="100" id="JEM-dO-5Tq"/>
-                            <constraint firstItem="yfK-K5-tal" firstAttribute="top" secondItem="smW-87-mDW" secondAttribute="bottom" constant="36" id="NOY-GF-XAB"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="63a-Lx-N3h" secondAttribute="trailing" constant="112" id="Nlp-u1-bPv"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="yfK-K5-tal" secondAttribute="trailing" constant="101" id="Xrf-Lj-V8j"/>
+                            <constraint firstItem="63a-Lx-N3h" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="119" id="LGq-Xo-6Qz"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="63a-Lx-N3h" secondAttribute="trailing" constant="120" id="NmE-v5-d9i"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="tfX-H1-PFA" secondAttribute="bottom" constant="25" id="Z3X-OF-6MV"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="tfX-H1-PFA" secondAttribute="trailing" constant="15" id="aWJ-Bn-Cv5"/>
-                            <constraint firstItem="63a-Lx-N3h" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="112" id="cfq-wH-oTX"/>
-                            <constraint firstItem="63a-Lx-N3h" firstAttribute="top" secondItem="smW-87-mDW" secondAttribute="bottom" constant="8" id="gAv-7z-U2v"/>
+                            <constraint firstItem="63a-Lx-N3h" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="373" id="l1n-OI-206"/>
                             <constraint firstItem="smW-87-mDW" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="249" id="ptp-sa-foC"/>
+                            <constraint firstItem="yfK-K5-tal" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="100" id="qwF-nY-5Kb"/>
+                            <constraint firstItem="yfK-K5-tal" firstAttribute="top" secondItem="smW-87-mDW" secondAttribute="bottom" constant="24" id="r9E-sO-Byf"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="smW-87-mDW" secondAttribute="trailing" constant="97" id="xO8-Dh-N6j"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
