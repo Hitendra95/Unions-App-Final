@@ -9,10 +9,10 @@
 /* Begin PBXBuildFile section */
 		50F311A97C6936EE6F0CFD9B /* Pods_Unions_App.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8F6039303CE48DDDF2525B8E /* Pods_Unions_App.framework */; };
 		DC5969512070CA270004D897 /* AccountKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DC5969502070CA260004D897 /* AccountKit.framework */; };
+		DC7B8C452072596500C35B5C /* UserFinalData.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC7B8C442072596500C35B5C /* UserFinalData.swift */; };
 		DCC101AE2070BC41004AFAFD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCC101AD2070BC41004AFAFD /* AppDelegate.swift */; };
 		DCC101B02070BC41004AFAFD /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCC101AF2070BC41004AFAFD /* ViewController.swift */; };
 		DCC101B32070BC41004AFAFD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DCC101B12070BC41004AFAFD /* Main.storyboard */; };
-		DCC101B62070BC41004AFAFD /* Unions_App.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = DCC101B42070BC41004AFAFD /* Unions_App.xcdatamodeld */; };
 		DCC101B82070BC41004AFAFD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DCC101B72070BC41004AFAFD /* Assets.xcassets */; };
 		DCC101BB2070BC41004AFAFD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DCC101B92070BC41004AFAFD /* LaunchScreen.storyboard */; };
 		DCC101C32070BC83004AFAFD /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCC101C22070BC83004AFAFD /* LoginViewController.swift */; };
@@ -23,11 +23,11 @@
 		8F6039303CE48DDDF2525B8E /* Pods_Unions_App.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Unions_App.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D2BBEA856A45808187DA9ABB /* Pods-Unions App.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Unions App.release.xcconfig"; path = "Pods/Target Support Files/Pods-Unions App/Pods-Unions App.release.xcconfig"; sourceTree = "<group>"; };
 		DC5969502070CA260004D897 /* AccountKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AccountKit.framework; path = "../../../Downloads/FacebookSDKs-iOS-4.31 2.1/AccountKit.framework"; sourceTree = "<group>"; };
+		DC7B8C442072596500C35B5C /* UserFinalData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserFinalData.swift; sourceTree = "<group>"; };
 		DCC101AA2070BC41004AFAFD /* Unions App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Unions App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		DCC101AD2070BC41004AFAFD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DCC101AF2070BC41004AFAFD /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		DCC101B22070BC41004AFAFD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		DCC101B52070BC41004AFAFD /* Unions_App.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Unions_App.xcdatamodel; sourceTree = "<group>"; };
 		DCC101B72070BC41004AFAFD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DCC101BA2070BC41004AFAFD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		DCC101BC2070BC41004AFAFD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -81,11 +81,11 @@
 				DCC101AD2070BC41004AFAFD /* AppDelegate.swift */,
 				DCC101C22070BC83004AFAFD /* LoginViewController.swift */,
 				DCC101AF2070BC41004AFAFD /* ViewController.swift */,
+				DC7B8C442072596500C35B5C /* UserFinalData.swift */,
 				DCC101B12070BC41004AFAFD /* Main.storyboard */,
 				DCC101B72070BC41004AFAFD /* Assets.xcassets */,
 				DCC101B92070BC41004AFAFD /* LaunchScreen.storyboard */,
 				DCC101BC2070BC41004AFAFD /* Info.plist */,
-				DCC101B42070BC41004AFAFD /* Unions_App.xcdatamodeld */,
 			);
 			path = "Unions App";
 			sourceTree = "<group>";
@@ -211,9 +211,14 @@
 			files = (
 			);
 			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-Unions App/Pods-Unions App-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Realm/Realm.framework",
+				"${BUILT_PRODUCTS_DIR}/RealmSwift/RealmSwift.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Realm.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RealmSwift.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -228,8 +233,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				DCC101C32070BC83004AFAFD /* LoginViewController.swift in Sources */,
+				DC7B8C452072596500C35B5C /* UserFinalData.swift in Sources */,
 				DCC101B02070BC41004AFAFD /* ViewController.swift in Sources */,
-				DCC101B62070BC41004AFAFD /* Unions_App.xcdatamodeld in Sources */,
 				DCC101AE2070BC41004AFAFD /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -417,19 +422,6 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
-
-/* Begin XCVersionGroup section */
-		DCC101B42070BC41004AFAFD /* Unions_App.xcdatamodeld */ = {
-			isa = XCVersionGroup;
-			children = (
-				DCC101B52070BC41004AFAFD /* Unions_App.xcdatamodel */,
-			);
-			currentVersion = DCC101B52070BC41004AFAFD /* Unions_App.xcdatamodel */;
-			path = Unions_App.xcdatamodeld;
-			sourceTree = "<group>";
-			versionGroupType = wrapper.xcdatamodel;
-		};
-/* End XCVersionGroup section */
 	};
 	rootObject = DCC101A22070BC41004AFAFD /* Project object */;
 }
