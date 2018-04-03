@@ -9,27 +9,6 @@
 import UIKit
 import AccountKit
 import RealmSwift
-//fileprivate func < <T : Comparable>(lhs: T?, rhs: T?) -> Bool {
-//    switch (lhs, rhs) {
-//    case let (l?, r?):
-//        return l < r
-//    case (nil, _?):
-//        return true
-//    default:
-//        return false
-//    }
-//}
-//
-//fileprivate func > <T : Comparable>(lhs: T?, rhs: T?) -> Bool {
-//    switch (lhs, rhs) {
-//    case let (l?, r?):
-//        return l > r
-//    default:
-//        return rhs < lhs
-//    }
-//}
-
-
 
 class ViewController: UIViewController {
     var accountKit :AKFAccountKit!
@@ -67,14 +46,22 @@ class ViewController: UIViewController {
     }
     func saveData()
     {
-        let data = UserFinalData()
+        var key = Data(count: 64)
+        _ = key.withUnsafeMutableBytes { bytes in
+            SecRandomCopyBytes(kSecRandomDefault, 64, bytes)
+        }
+        let config = Realm.Configuration(encryptionKey: key)
+        
+        let data = FinalData()
         data.name = nameTextField.text!
         data.emailId = emailTextField.text!
         data.accountId = token
         
         
         do
-        {   let realm = try Realm()
+        {
+            let realm = try Realm(configuration: config)
+            print(Realm.Configuration.defaultConfiguration.fileURL!)
             try realm.write {
                 realm.add(data)
                 print(Realm.Configuration.defaultConfiguration.fileURL!)

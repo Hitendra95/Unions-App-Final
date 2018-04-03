@@ -9,7 +9,7 @@
 /* Begin PBXBuildFile section */
 		50F311A97C6936EE6F0CFD9B /* Pods_Unions_App.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8F6039303CE48DDDF2525B8E /* Pods_Unions_App.framework */; };
 		DC5969512070CA270004D897 /* AccountKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DC5969502070CA260004D897 /* AccountKit.framework */; };
-		DC7B8C452072596500C35B5C /* UserFinalData.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC7B8C442072596500C35B5C /* UserFinalData.swift */; };
+		DC7B8C4F2073A4DF00C35B5C /* FinalData.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC7B8C4E2073A4DF00C35B5C /* FinalData.swift */; };
 		DCC101AE2070BC41004AFAFD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCC101AD2070BC41004AFAFD /* AppDelegate.swift */; };
 		DCC101B02070BC41004AFAFD /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCC101AF2070BC41004AFAFD /* ViewController.swift */; };
 		DCC101B32070BC41004AFAFD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DCC101B12070BC41004AFAFD /* Main.storyboard */; };
@@ -23,7 +23,7 @@
 		8F6039303CE48DDDF2525B8E /* Pods_Unions_App.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Unions_App.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D2BBEA856A45808187DA9ABB /* Pods-Unions App.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Unions App.release.xcconfig"; path = "Pods/Target Support Files/Pods-Unions App/Pods-Unions App.release.xcconfig"; sourceTree = "<group>"; };
 		DC5969502070CA260004D897 /* AccountKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AccountKit.framework; path = "../../../Downloads/FacebookSDKs-iOS-4.31 2.1/AccountKit.framework"; sourceTree = "<group>"; };
-		DC7B8C442072596500C35B5C /* UserFinalData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserFinalData.swift; sourceTree = "<group>"; };
+		DC7B8C4E2073A4DF00C35B5C /* FinalData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FinalData.swift; sourceTree = "<group>"; };
 		DCC101AA2070BC41004AFAFD /* Unions App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Unions App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		DCC101AD2070BC41004AFAFD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DCC101AF2070BC41004AFAFD /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -81,7 +81,7 @@
 				DCC101AD2070BC41004AFAFD /* AppDelegate.swift */,
 				DCC101C22070BC83004AFAFD /* LoginViewController.swift */,
 				DCC101AF2070BC41004AFAFD /* ViewController.swift */,
-				DC7B8C442072596500C35B5C /* UserFinalData.swift */,
+				DC7B8C4E2073A4DF00C35B5C /* FinalData.swift */,
 				DCC101B12070BC41004AFAFD /* Main.storyboard */,
 				DCC101B72070BC41004AFAFD /* Assets.xcassets */,
 				DCC101B92070BC41004AFAFD /* LaunchScreen.storyboard */,
@@ -233,8 +233,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				DCC101C32070BC83004AFAFD /* LoginViewController.swift in Sources */,
-				DC7B8C452072596500C35B5C /* UserFinalData.swift in Sources */,
 				DCC101B02070BC41004AFAFD /* ViewController.swift in Sources */,
+				DC7B8C4F2073A4DF00C35B5C /* FinalData.swift in Sources */,
 				DCC101AE2070BC41004AFAFD /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

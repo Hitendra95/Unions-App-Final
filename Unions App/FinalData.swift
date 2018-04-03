@@ -1,15 +1,14 @@
 //
-//  UserFinalData.swift
+//  FinalData.swift
 //  Unions App
 //
-//  Created by Hitendra Dubey on 02/04/18.
+//  Created by Hitendra Dubey on 03/04/18.
 //  Copyright © 2018 Hitendra Dubey. All rights reserved.
 //
 
 import Foundation
-import Foundation
 import RealmSwift
-class UserFinalData: Object {
+class FinalData: Object {
     @objc dynamic var name : String = ""
     @objc dynamic var emailId : String = ""
     @objc dynamic var accountId : String = ""
